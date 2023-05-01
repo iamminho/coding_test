@@ -6,6 +6,7 @@ import static org.assertj.core.api.Assertions.*;
 
 class 신고_결과_받기Test {
     신고_결과_받기 test = new 신고_결과_받기();
+    신고_결과_받기_2 test2 = new 신고_결과_받기_2();
 
     @Test
     void test1() {
@@ -14,9 +15,11 @@ class 신고_결과_받기Test {
         int k = 2;
 
         int[] result = test.solution(id_list, report, k);
+        int[] result2 = test2.solution(id_list, report, k);
         int[] answer = new int[]{2,1,1,0};
 
         assertThat(result).isEqualTo(answer);
+        assertThat(result2).isEqualTo(answer);
 
     }
 
@@ -27,10 +30,11 @@ class 신고_결과_받기Test {
         int k = 3;
 
         int[] result = test.solution(id_list, report, k);
+        int[] result2 = test2.solution(id_list, report, k);
         int[] answer = new int[]{0, 0};
 
         assertThat(result).isEqualTo(answer);
-
+        assertThat(result2).isEqualTo(answer);
     }
 
 }
