@@ -30,6 +30,7 @@ public class 사라지는_발판 {
     private static final int[] dy = {-1, 1, 0, 0};
 
     private Result game(Coord player, Coord opponent, int[][] board) {
+
         // 종료조건
         if (board[player.y][player.x] == 0) {
             return new Result(false, 0);
@@ -48,25 +49,37 @@ public class 사라지는_발판 {
             if (board[ny][nx] == 0) continue;
 
             Result result = game(opponent, new Coord(nx, ny), board);
+
+            // result의 win이 false면 상대방이 진거
+            // 결국 나는 이긴거
+            // 내가이기면 최소의 움직임
             if (!result.win) {
                 win = true;
                 winTurns = Math.min(winTurns, result.turns);
+                // result의 win이 true면 내가 진거
+                // 결국 상대방이 이긴거
+                // 상대방이 이기면 최대의 움직임
             } else if (!win) {
                 loseTurns = Math.max(loseTurns, result.turns);
             }
         }
         board[player.y][player.x] = 1;
 
+        // win이 true이면 한번이라도 이긴적이 있는것
+        // 그러니 result의 true를 담아 반환해준다.
+        // 가장 적은 횟수의 winTurns에 다음 턴으로 넘기는 횟수인 1을 더해 반환한다.
         if (win) {
             return new Result(true, winTurns + 1);
         }
 
+        // loseTurns가 그대로 MIN_VALUE이면 움직이지 못했다는 소리
+        // 움직이지 못했으니 0을 반환해준다.
         if (loseTurns == Integer.MIN_VALUE) {
             return new Result(false, 0);
         }
 
+        // win이 false이면 결국 졌다는 소리
+        // loseTurns에 다음 턴으로 넘기는 횟수인 1을 더해 반환한다.
         return new Result(false, loseTurns + 1);
     }
-
-
 }
