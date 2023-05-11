@@ -30,6 +30,7 @@ public class 사라지는_발판 {
     private static final int[] dy = {-1, 1, 0, 0};
 
     private Result game(Coord player, Coord opponent, int[][] board) {
+        // 종료조건
         if (board[player.y][player.x] == 0) {
             return new Result(false, 0);
         }
@@ -45,6 +46,7 @@ public class 사라지는_발판 {
 
             if (ny < 0 || ny >= board.length || nx < 0 || nx >= board[ny].length) continue;
             if (board[ny][nx] == 0) continue;
+
             Result result = game(opponent, new Coord(nx, ny), board);
             if (!result.win) {
                 win = true;
