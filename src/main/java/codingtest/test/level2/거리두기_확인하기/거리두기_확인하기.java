@@ -1,4 +1,4 @@
-package codingtest.test.level2;
+package codingtest.test.level2.거리두기_확인하기;
 
 import java.util.LinkedList;
 import java.util.List;
