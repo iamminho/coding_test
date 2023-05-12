@@ -7,11 +7,11 @@ import java.util.List;
 public class 교점에_별_만들기 {
     public static void main(String[] args) {
         int[][] line = {
-//                {2, -1, 4},
-//                {-2, -1, 4},
-//                {0, -1, 1},
-//                {5, -8, -12},
-//                {5, 8, 12}
+                {2, -1, 4},
+                {-2, -1, 4},
+                {0, -1, 1},
+                {5, -8, -12},
+                {5, 8, 12}
 //                "------------"
 //                {0, 1, -1},
 //                {1, 0, -1},
@@ -20,9 +20,9 @@ public class 교점에_별_만들기 {
 //                {1, -1, 0},
 //                {2, -1, 0},
 //                "--------------"
-                {1, -1, 0},
-                {2, -1, 0},
-                {4, -1, 0}
+//                {1, -1, 0},
+//                {2, -1, 0},
+//                {4, -1, 0}
         };
 
         String[] result = solution(line);
@@ -42,6 +42,9 @@ public class 교점에_별_만들기 {
                 }
             }
         }
+        
+        points.stream()
+                .forEach(p -> System.out.println(p.x + ", " + p.y));
 
         Point minPoint = getMinIntersaction(points);
         Point maxPoint = getMaxIntersaction(points);
