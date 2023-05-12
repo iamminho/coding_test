@@ -28,18 +28,19 @@ public class 거리두기_확인하기 {
         int[] dy = {0, 1, 0, -1};
 
         for (int i = 0; i < 4; i++) {
-            int Dx = x + dx[i];
-            int Dy = y + dy[i];
+            int nx = x + dx[i];
+            int ny = y + dy[i];
 
-            if (Dx >= 0 && Dy >= 0 && Dx < 5 && Dy < 5 && (place[Dy].charAt(Dx) == 'O' || place[Dy].charAt(Dx) == 'P')) {
-                if (place[Dy].charAt(Dx) == 'P') return false;
+            if (nx >= 0 && ny >= 0 && nx < 5 && ny < 5 && (place[ny].charAt(nx) == 'O' || place[ny].charAt(nx) == 'P')) {
+                if (place[ny].charAt(nx) == 'P') return false;
                 int count = 0;
                 for (int j = 0; j < 4; j++) {
-                    int DX = Dx + dx[j];
-                    int DY = Dy + dy[j];
-                    if (DX >= 0 && DY >= 0 && DX < 5 && DY < 5 && place[DY].charAt(DX) == 'P') count++;
+                    int nnx = nx + dx[j];
+                    int nny = ny + dy[j];
+                    if (nnx >= 0 && nny >= 0 && nnx < 5 && nny < 5 && place[nny].charAt(nnx) == 'P') return false;
                 }
                 if (count >= 2) return false;
+                // P로부터 출발했으므로 count가 두개일때 false조건이 성립한다.
             }
         }
         return true;
