@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class 문자열_압축_re {
     public int solution(String s) {
-        int answer = 1000;
+        int answer = Integer.MAX_VALUE;
         if (s.length() == 1) return 1;
 
         for (int num = 1; num <= s.length() / 2; num++) {
@@ -14,16 +14,15 @@ public class 문자열_압축_re {
         return answer;
     }
 
-    private int getPress(int num, String s) {
+    private int getPress(int length, String s) {
         StringBuilder sb = new StringBuilder();
         Stack<String> stack = new Stack();
         int count = 1;
 
-        for (int i = 0; i < s.length(); i++) {
-            String sub;
-            if (i == s.length() - (s.length() % num)) sub = s.substring(i);
-            else sub = s.substring(i, i + num);
-            i = i + num - 1;
+        for (int start = 0; start < s.length(); start += length) {
+            int end = start + length;
+            if (end > s.length()) end = s.length();
+            String sub = s.substring(start, end);
 
             if (stack.isEmpty()) {
                 stack.push(sub);
