@@ -1,4 +1,4 @@
-package codingtest.test.level2;
+package codingtest.test.level2.문자열_압축;
 
 import java.util.LinkedList;
 import java.util.List;
