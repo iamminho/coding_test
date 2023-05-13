@@ -1,4 +1,4 @@
-package codingtest.test.level1;
+package codingtest.test.level1.시저암호;
 
 public class 시저암호 {
     public static void main(String[] args) {
