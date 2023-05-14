@@ -1,4 +1,4 @@
-package codingtest.test.level2;
+package codingtest.test.level2.쿼드압축_후_개수_세기;
 
 public class 쿼드압축_후_개수_세기 {
     private static class Count {
