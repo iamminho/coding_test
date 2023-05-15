@@ -1,4 +1,4 @@
-package codingtest.test.level2;
+package codingtest.test.level2.모음_사전;
 
 import java.util.ArrayList;
 import java.util.List;
