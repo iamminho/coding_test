@@ -19,16 +19,15 @@ public class 모음_사전_re {
 
             if (myWord.equals(word)) {
                 flag = true;
+                return;
             }
-
-            if (flag) return;
 
             if (myWord.length() == 5) {
                 return;
             }
 
-            for (int i = 0; i < letters.length; i++) {
-                if (!flag) search(word, myWord + letters[i], words);
+            for (String letter : letters) {
+                if (!flag) search(word, myWord + letter, words);
             }
         }
     }
