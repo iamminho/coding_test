@@ -1,4 +1,4 @@
-package codingtest.test.level3;
+package codingtest.test.level3.하노이의_탑;
 
 import java.util.ArrayList;
 import java.util.List;
