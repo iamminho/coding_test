@@ -1,4 +1,4 @@
-package codingtest.test.level2;
+package codingtest.test.level2.카펫;
 
 public class 카펫 {
     public static void main(String[] args) {
