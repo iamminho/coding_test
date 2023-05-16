@@ -1,4 +1,4 @@
-package codingtest.test.level2;
+package codingtest.test.level2.소수찾기;
 
 import java.util.HashSet;
 import java.util.Set;
