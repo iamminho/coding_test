@@ -1,4 +1,4 @@
-package codingtest.test.level3;
+package codingtest.test.level3.불량_사용자;
 
 import java.util.Arrays;
 import java.util.HashSet;

@@ -3,6 +3,8 @@ package codingtest.test.level1;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 public class K_번째_수 {
     /*
@@ -21,6 +23,12 @@ public class K_번째_수 {
         };
 
         int[] array = {1, 5, 2, 6, 3, 7, 4};
+        
+        List<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 3));
+        Set<String> result = list.stream()
+                .map(i -> i.toString())
+                .collect(Collectors.toSet());
+        System.out.println(result);
 
 
         List<Integer> results = solution(commands, array);

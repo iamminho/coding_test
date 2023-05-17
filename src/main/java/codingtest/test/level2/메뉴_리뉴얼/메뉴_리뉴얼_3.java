@@ -1,4 +1,4 @@
-package codingtest.test.level2;
+package codingtest.test.level2.메뉴_리뉴얼;
 
 import java.util.*;
 
