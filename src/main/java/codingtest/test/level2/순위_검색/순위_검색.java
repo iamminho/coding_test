@@ -1,4 +1,4 @@
-package codingtest.test.level2;
+package codingtest.test.level2.순위_검색;
 
 import java.util.Arrays;
 import java.util.LinkedList;
