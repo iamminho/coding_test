@@ -1,9 +1,9 @@
-package codingtest.test.level3;
+package codingtest.test.level3.입국심사;
 
 public class 입국심사 {
     public static void main(String[] args) {
-        int[] times = new int[]{7, 10};
-        int n = 6;
+        int[] times = new int[]{7, 10, 12};
+        int n = 10;
         long result = binarySearch(times, n);
         System.out.println("result = " + result);
     }
