@@ -1,4 +1,4 @@
-package codingtest.test.level4;
+package codingtest.test.level4.징검다리;
 
 import java.util.Arrays;
 
