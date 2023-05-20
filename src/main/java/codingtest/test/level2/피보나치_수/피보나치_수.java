@@ -1,4 +1,4 @@
-package codingtest.test.level2;
+package codingtest.test.level2.피보나치_수;
 
 import java.util.Arrays;
 
