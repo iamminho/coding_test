@@ -1,4 +1,4 @@
-package codingtest.test.level1;
+package codingtest.test.level1.완주하지_못한_선수;
 
 import java.util.Arrays;
 import java.util.Map;
