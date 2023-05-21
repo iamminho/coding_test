@@ -1,4 +1,4 @@
-package codingtest.test.level3;
+package codingtest.test.level3.정수_삼각형;
 
 import java.util.Arrays;
 
