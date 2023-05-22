@@ -1,4 +1,4 @@
-package codingtest.test.level3;
+package codingtest.test.level3.등굣길;
 
 import java.util.Arrays;
 

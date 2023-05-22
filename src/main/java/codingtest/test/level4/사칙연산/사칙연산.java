@@ -1,4 +1,4 @@
-package codingtest.test.level4;
+package codingtest.test.level4.사칙연산;
 
 import java.util.Arrays;
 
