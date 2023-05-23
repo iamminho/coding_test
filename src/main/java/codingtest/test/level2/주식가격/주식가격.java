@@ -1,4 +1,4 @@
-package codingtest.test.level2;
+package codingtest.test.level2.주식가격;
 
 import java.util.Stack;
 

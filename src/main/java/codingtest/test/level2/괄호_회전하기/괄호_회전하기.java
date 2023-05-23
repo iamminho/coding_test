@@ -1,4 +1,4 @@
-package codingtest.test.level2;
+package codingtest.test.level2.괄호_회전하기;
 
 import java.util.List;
 import java.util.Stack;
