@@ -1,4 +1,4 @@
-package codingtest.test.level2;
+package codingtest.test.level2.올바른_괄호;
 
 import java.util.Stack;
 
