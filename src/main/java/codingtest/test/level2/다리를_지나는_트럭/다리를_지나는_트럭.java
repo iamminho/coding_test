@@ -1,4 +1,4 @@
-package codingtest.test.level2;
+package codingtest.test.level2.다리를_지나는_트럭;
 
 import java.util.LinkedList;
 import java.util.Queue;
