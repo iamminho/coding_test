@@ -1,4 +1,4 @@
-package codingtest.test.level3;
+package codingtest.test.level3.순위;
 
 public class 순위 {
     // 해당 번호로 올 수 있는 갯수 + 해당 번호에서 갈 수 있는 갯수 == n 이면 순위를 매길 수 있다.
