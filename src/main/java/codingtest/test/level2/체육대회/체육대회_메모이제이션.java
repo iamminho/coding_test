@@ -18,6 +18,7 @@ public class 체육대회_메모이제이션 {
         System.out.println("answer = " + answer);
     }
 
+    
     public static int solution(int[][] ability) {
         return max(0, new boolean[ability.length], ability);
     }
