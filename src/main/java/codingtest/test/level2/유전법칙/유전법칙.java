@@ -1,7 +1,7 @@
 package codingtest.test.level2.유전법칙;
 
 public class 유전법칙 {
-    static int[] order = new int[]{4, 1, 2, 3};
+    static int[] order = new int[]{3, 0, 1, 2};
 
     public static String[] solution(int[][] queries) {
         String[] answer = new String[queries.length];
@@ -28,6 +28,6 @@ public class 유전법칙 {
         if (bean.equals("rr")) return "rr";
 
         String[] beans = new String[]{"RR", "Rr", "Rr", "rr"};
-        return beans[curN - 1];
+        return beans[curN];
     }
 }
