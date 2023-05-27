@@ -24,13 +24,10 @@ public class 유전법칙 {
     }
 
     public static String getBean(String bean, int curN) {
-        String[] beans = bean.split("");
-        if (curN == 1) {
-            return beans[0] + beans[0];
-        }
-        if (curN == 2 || curN == 3) {
-            return beans[0] + beans[1];
-        }
-        return beans[1] + beans[1];
+        if (bean.equals("RR")) return "RR";
+        if (bean.equals("rr")) return "rr";
+
+        String[] beans = new String[]{"RR", "Rr", "Rr", "rr"};
+        return beans[curN - 1];
     }
 }
