@@ -1,4 +1,4 @@
-package codingtest.test.level3;
+package codingtest.test.level3.길_찾기_게임;
 
 import java.util.ArrayList;
 import java.util.Arrays;
